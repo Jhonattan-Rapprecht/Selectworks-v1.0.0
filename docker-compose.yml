@@ -13,7 +13,9 @@ services:
 
 
   phpmyadmin:
-    image: phpmyadmin/phpmyadmin
+    build:
+      context: docker/phpmyadmin
+      dockerfile: Dockerfile
     container_name: selectworks-phpmyadmin
     restart: always
     ports:
