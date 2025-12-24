@@ -1,13 +1,21 @@
 {
-  "name": "Selectworks-Codespace-Build-1.0.0-Dev",
+  "name": "Selectworks Dev Environment",
   "dockerComposeFile": [
     "../docker-compose.yml"
   ],
   "service": "web",
-  "runServices": ["web", "phpmyadmin", "db"],
+  "runServices": [
+    "web",
+    "phpmyadmin",
+    "db"
+  ],
   "overrideCommand": false,
   "workspaceFolder": "/workspaces/Selectworks-v1.0.0",
-
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {},
+    "ghcr.io/devcontainers/features/git-lfs:1": {}
+  },
+  "postCreateCommand": "git lfs install",
   "customizations": {
     "vscode": {
       "settings": {
@@ -21,6 +29,11 @@
       ]
     }
   },
-
-  "remoteUser": "vscode"
+  "remoteUser": "vscode",
+  "runArgs": [
+    "--privileged"
+  ],
+  "mounts": [
+    "source=/var/run/docker.sock,target=/var/run/docker.sock,type=bind"
+  ]
 }
