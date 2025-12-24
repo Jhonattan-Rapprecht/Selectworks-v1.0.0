@@ -14,5 +14,7 @@
     "xdebug.php-debug",
     "ms-azuretools.vscode-docker"
   ],
-  "remoteUser": "root"
+  "remoteUser": "root",
+  "postStartCommand": "sudo service apache2 start"
+
 }
