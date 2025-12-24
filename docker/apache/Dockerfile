@@ -27,3 +27,6 @@ RUN printf "<VirtualHost *:80>\n\
 </VirtualHost>\n" > /etc/apache2/sites-available/000-default.conf
 
 WORKDIR /var/www
+
+CMD ["apache2-foreground"]
+
