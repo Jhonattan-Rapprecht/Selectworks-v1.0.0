@@ -9,7 +9,8 @@ $root = $_SERVER['DOCUMENT_ROOT'];
 <html>
 
 	<head>
-		
+
+
 		<!-- Meta tags -->		
 		
 		<meta charset="utf-8">
@@ -19,6 +20,8 @@ $root = $_SERVER['DOCUMENT_ROOT'];
 		<meta name="application" content="selectworks-webapplicatie-versie-1.0">
 		
 		<meta name="author" content="J.M. Rapprecht">
+
+
 		
 		<!-- Stylesheets -->
 		
@@ -27,22 +30,27 @@ $root = $_SERVER['DOCUMENT_ROOT'];
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alex+Brush">
+
+
 		
-		<link rel="stylesheet" href="https://www.selectworks.nl/slw-webapp-v1/app-includes/style/css/carousel.css">
+		<link rel="stylesheet" href="/slw-webapp-v1/app-includes/style/css/carousel.css">
 		
-		<link rel="stylesheet" href="https://www.selectworks.nl/slw-webapp-v1/app-includes/style/css/selectworks-style.css">
+		<link rel="stylesheet" href="/slw-webapp-v1/app-includes/style/css/selectworks-style.css">
 		
-		<link rel="stylesheet" href="https://www.selectworks.nl/slw-webapp-v1/app-includes/services/services-style.css">
+		<link rel="stylesheet" href="/slw-webapp-v1/app-includes/services/services-style.css">
+		
 		
 		<!-- Stylesheets animations-->
 		
-		<link rel="stylesheet" href="https://www.selectworks.nl/slw-webapp-v1/app-animations/combined-animations.css">
+		<link rel="stylesheet" href="/slw-webapp-v1/app-animations/combined-animations.css">
 		
-		<link rel="stylesheet" href="https://www.selectworks.nl/slw-webapp-v1/app-animations/loading bars/Preloader-master/preloader.css" >
+		<link rel="stylesheet" href="/slw-webapp-v1/app-animations/loading bars/Preloader-master/preloader.css" >
+		
+		
 		
 		<!-- Address bar icon / favicon-->
 		
-		<link rel="icon" type="image/png" href="https://www.selectworks.nl/slw-webapp-v1/app-includes/header/favicon/Selectworks-type2.png">
+		<link rel="icon" type="image/png" href="/slw-webapp-v1/app-includes/header/favicon/Selectworks-type2.png">
 		
 		<title>
 		

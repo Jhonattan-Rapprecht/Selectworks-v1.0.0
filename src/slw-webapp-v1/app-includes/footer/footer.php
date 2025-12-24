@@ -20,7 +20,7 @@
     
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		
-		
+
 		<!-- Content panel(s) javascript files -->
 		
 		<script src="/slw-webapp-v1/app-includes/content-panels/content-panel-a.js"></script>
