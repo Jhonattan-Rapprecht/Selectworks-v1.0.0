@@ -1,37 +1,37 @@
 {
-  "name": "Selectworks Dev Container",
+    "name": "Selectworks Dev Container",
 
-  "dockerComposeFile": [
-    "../docker-compose.yml"
-  ],
+    "dockerComposeFile": [
+        "../docker-compose.yml"
+    ],
 
-  "service": "web",
-  "runServices": ["web", "phpmyadmin", "db"],
+    "service": "web",
+    "runServices": ["web", "phpmyadmin", "db"],
 
-  "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+    "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
 
-  "features": {
-    "ghcr.io/devcontainers/features/docker-in-docker:2": {
-      "moby": false
+    "features": {
+        "ghcr.io/devcontainers/features/docker-in-docker:2": {
+            "moby": false
+        },
+        "ghcr.io/devcontainers/features/git-lfs:1": {}
     },
-    "ghcr.io/devcontainers/features/git-lfs:1": {}
-  },
 
-  "postCreateCommand": "git lfs install",
+    "postCreateCommand": "git lfs install",
 
-  "customizations": {
-    "vscode": {
-      "settings": {
-        "php.validate.executablePath": "/usr/bin/php",
-        "editor.formatOnSave": true
-      },
-      "extensions": [
-        "bmewburn.vscode-intelephense-client",
-        "xdebug.php-debug",
-        "ms-azuretools.vscode-docker"
-      ]
-    }
-  },
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "php.validate.executablePath": "",
+                "editor.formatOnSave": true
+            },
+            "extensions": [
+                "bmewburn.vscode-intelephense-client",
+                "xdebug.php-debug",
+                "ms-azuretools.vscode-docker"
+            ]
+        }
+    },
 
-  "remoteUser": "vscode"
+    "remoteUser": "vscode"
 }
